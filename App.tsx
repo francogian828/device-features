@@ -1,17 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import CameraScreen from './src/Camera';
+import GeolocationScreen from './src/Geolocation';
+import NotificationScreen from './src/LocalPushNotification';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <CameraScreen></CameraScreen>
+      {/* <GeolocationScreen></GeolocationScreen>
+      <NotificationScreen></NotificationScreen> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: StatusBar.currentHeight,
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
