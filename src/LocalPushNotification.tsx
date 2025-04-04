@@ -1,3 +1,4 @@
+// npx expo install expo-notifications
 import React, { useEffect } from 'react';
 import { View, Button, StyleSheet, Platform } from 'react-native';
 import * as Notifications from 'expo-notifications';
